@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/master.css">
+    <link rel="stylesheet" href="../css/master.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
     <title>event /Damascus city</title>
 </head>
 
@@ -12,7 +18,7 @@
     <header class="header">
         <h1 class="logo">Damascus <span>City</span></h1>
         <span class="material-symbols-outlined" id="menu-icon">dehaze</span>
-          <nav class="navbar">
+        <nav class="navbar">
             <a href="../index.html">Home</a>
             <a href="../events.html">Events</a>
             <a href="../about.html">About</a>
@@ -26,7 +32,9 @@
                 <div class="event-content">
                     <img src="../images/al-azem-palace-palace.jpg" alt="">
                     <h1 class="event-title">قصر العظم</h1>
-                    <p class="event-description">هو قصر شُيد في القرن الثامن عشر الميلادي، ويقع في النهاية الشمالية لسوق البزورية بدمشق القديمة،وهو من بناء والي دمشق الوزير أسعد العظم عام 1749م ويعد القصر نموذجاً للفن المعماري الإسلامي المتطور</p>
+                    <p class="event-description">هو قصر شُيد في القرن الثامن عشر الميلادي، ويقع في النهاية الشمالية لسوق
+                        البزورية بدمشق القديمة،وهو من بناء والي دمشق الوزير أسعد العظم عام 1749م ويعد القصر نموذجاً للفن
+                        المعماري الإسلامي المتطور</p>
                 </div>
 
                 <div class="event-detail">
@@ -41,7 +49,7 @@
                         <h3>دمشق</h3>
                     </div>
 
-                    <img src="./images/معرض الزهور.jpg" alt="" width="100%">
+                    <img src="../images/map.jpg" alt="" width="100%">
 
                     <div class="price spe">
                         <i class='bx bx-money-withdraw'></i>
@@ -59,35 +67,83 @@
 
     </section>
 
+    <!-- Related Events Section -->
+    <section class="events" dir="rtl">
+        <div class="events-container">
+            <h2 style="text-align: center; margin-bottom: 2rem;">فعاليات أخرى قد تعجبك</h2>
+            <div class="events-grid">
+                <!-- Event 1 -->
+                <div class="event-box" data-category="culture entertainment">
+                    <img src="../images/damascus fair.jpg" alt="">
+                    <div class="box-container">
+                        <h2><span>معرض دمشق الدولي</span></h2>
+                        <p>من أقدم وأعرق وأكبر المعارض الدولية في الشرق الأوسط،يقام في دمشق سنويا منذ عام 1954م تشارك به
+                            عشرات الدول
+                            من مختلف قارات العالم ومئات الشركات السورية والعالمية</p>
+                        <p>27/8/2026</p>
+                        <button class="btn" id="btn"><a href="event1.html"> التفاصيل</a></button>
+                    </div>
+                </div>
+
+                <!-- Event 4 -->
+                <div class="event-box" data-category="culture">
+                    <img src="../images/the-national-museum-of.jpg" alt="">
+                    <div class="box-container">
+                        <h2><span>المتحف الوطني بدمشق</span></h2>
+                        <p>عميد المتاحف السورية وواحد من أهم المتاحف العربية، فهو أكبرها وأقدمها وأشهرها ويشكل بأقسامه
+                            وحدائقه الواسعة متاحف عديدة ضمن متحف واحد، كما ويضم أبرز الآثار السورية المكتشفة في القرن
+                            العشرين</p>
+                        <p>يومياً من 9 ص إلى 5 م</p>
+                        <button class="btn"><a href="event4.html"> التفاصيل</a></button>
+                    </div>
+                </div>
+
+                <!-- Event 5 -->
+                <div class="event-box" data-category="religious">
+                    <img src="../images/Umayyad_Mosque_night.jpg" alt="">
+                    <div class="box-container">
+                        <h2><span>الجامع الأموي الكبير</span></h2>
+                        <p>وهو من أشهر المساجد وأفخمها، وأحد عجائب الإسلام السبعة في العالم تميز الجامع الأموي أيضًا
+                            بكونه أول مسجد
+                            ظهر فيه المحراب والحنية نتيجة طراز البناء الذي كان يشكل كنيسة يوحنا المعمدان سابقاً</p>
+                        <p>يومياً من 9 ص إلى 5م</p>
+                        <button class="btn"><a href="event5.html"> التفاصيل</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer" id="footer">
-        <div class="footer-contanir">
+        <div class="footer-container">
             <div class="footer-social">
-              <h2>دليلك لزيارة دمشق</h2>
-             <div class="social-icons">
-               <a href=""><i class='bx bxl-facebook-circle'></i></a>
-               <a href=""><i class='bx bxl-instagram-alt'></i></a>
-              <a href=""><i class='bx bxl-telegram'></i></a>
-             </div>
-              <a href=""> Damascus@cityevents.com</a>
+                <h2>دليلك لزيارة دمشق</h2>
+                <div class="social-icons">
+                    <a href=""><i class='bx bxl-facebook-circle'></i></a>
+                    <a href=""><i class='bx bxl-instagram-alt'></i></a>
+                    <a href=""><i class='bx bxl-telegram'></i></a>
+                </div>
+                <a href=""> Damascus@cityevents.com</a>
             </div>
             <hr class="vertical">
             <div class="footer-contact">
                 <h2>التواصل على الأرقام:</h2>
-                <ul  class="phone">
-                  <li class="name">Marah swidan : marah_401243</li>
-                  <li class="name">Batoul alani : batoul_341595</li>
-                  <li class="name">Khalid kakhi : khalid_377331</li>
-                  <li class="name">Mosaab Alseed : mousaab_395345</li>
-                  <li class="name">Elias Albittar: Elias_392234</li>
+                <ul class="phone">
+                    <li class="name">Marah swidan : marah_401243</li>
+                    <li class="name">Batoul alani : batoul_341595</li>
+                    <li class="name">Khalid kakhi : khalid_377331</li>
+                    <li class="name">Mosaab Alseed : mousaab_395345</li>
+                    <li class="name">Elias Albittar: Elias_392234</li>
                 </ul>
             </div>
         </div>
         <hr class="end">
         <h3>2025<span> @ </span>حقوق النشر محفوظة</3>
-        
-    </footer>   
+
+    </footer>
 
 
     <script src="./js/main.js"></script>
 </body>
+
 </html>

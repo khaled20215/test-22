@@ -1,166 +1,182 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
-    <link rel="stylesheet" href="/css/master.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="./css/master.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+    rel="stylesheet">
+  <title>events/Damascus city</title>
 
-    <title>events/Damascus city</title>
+  <style>
+    header nav a {
+      text-decoration: none;
+    }
 
-    <style>
-      header nav a{
-        text-decoration: none;
-      }
+    .events a {
+      text-decoration: none;
+    }
 
-      .events a{
-        text-decoration: none;
-      }
+    .events button a {
+      color: #fff;
+    }
+  </style>
 
-      .events button a{
-        color: #fff;
-      }
-
-
-    </style>
-    
 </head>
-<body>
-     <header class="header">
-        <h1 class="logo">Damascus <span>City</span></h1>
-        <span class="material-symbols-outlined" id="menu-icon">dehaze</span>
-        <nav class="navbar">
-            <a href="index.html" >Home</a>
-            <a href="events.html">Events</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-    <section class="events" id="events">
-    <div class="events-container">
-        <h1>تعرف على أهم الفعاليات</h1>
-         <div class="card p-4 mb-5 bg-white">
-                <div class="row g-3">
-                    <div class="col-12">
-                        <label class="form-label fw-bold">بحث</label>
-                        <div class="input-group">
-                            <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
-                            <input type="text" class="form-control" id="filter-search"
-                                placeholder="ابحث عن اسم الفعالية...">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <label class="form-label fw-bold">التصنيف</label>
-                        <select class="form-select" id="filter-category">
-                            <option value="all">كل التصنيفات</option>
-                        </select>
-                    </div>
-                    <div class="col-md-6">
-                        <label class="form-label fw-bold">ترتيب حسب التاريخ</label>
-                        <select class="form-select" id="filter-date">
-                            <option value="newest">الأحدث أولاً</option>
-                            <option value="oldest">الأقدم أولاً</option>
-                        </select>
-                    </div>
-                </div>
-          </div>
 
-     <div class="events-grid">
-       <div class="event-box">
-      <img src="./images/damascus fair.jpg" alt="">
-      <div class="box-containar">
-        <h2><span>معرض دمشق الدولي</span></h2>
-        <p>من أقدم وأعرق وأكبر المعارض الدولية في الشرق الأوسط،يقام في دمشق سنويا منذ عام 1954م تشارك به عشرات الدول من مختلف قارات العالم ومئات الشركات السورية والعالمية</p>
-        <p>27/8/2026</p>
-        <button class="btn" id="btn"><a href="./event/event1.html"> التفاصيل</a></button>
+<body>
+  <header class="header">
+    <h1 class="logo">Damascus <span>City</span></h1>
+    <span class="material-symbols-outlined" id="menu-icon">dehaze</span>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <section class="events" id="events">
+    <div class="events-container">
+      <h1>تعرف على أهم الفعاليات</h1>
+      <div class="card p-4 mb-5 bg-white">
+        <div class="row g-3">
+          <div class="col-12">
+            <label class="form-label fw-bold">بحث</label>
+            <div class="input-group">
+              <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
+              <input type="text" class="form-control" id="filter-search" placeholder="ابحث عن اسم الفعالية...">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label fw-bold">التصنيف</label>
+            <select class="form-select" id="filter-category">
+              <option value="all">كل التصنيفات</option>
+              <option value="culture">ثقافة</option>
+              <option value="music">موسيقى</option>
+              <option value="entertainment">ترفيه</option>
+              <option value="religious">أماكن دينية</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label fw-bold">ترتيب حسب التاريخ</label>
+            <select class="form-select" id="filter-date">
+              <option value="newest">الأحدث أولاً</option>
+              <option value="oldest">الأقدم أولاً</option>
+            </select>
+          </div>
+        </div>
       </div>
-      </div>
-        <div class="event-box">
-          <img src="/images/damascus opera.jpeg" alt="">
-          <div class="box-containar">
+
+
+
+      <div class="events-grid">
+        <div class="event-box" data-category="culture entertainment">
+          <img src="./images/damascus fair.jpg" alt="">
+          <div class="box-container">
+            <h2><span>معرض دمشق الدولي</span></h2>
+            <p>من أقدم وأعرق وأكبر المعارض الدولية في الشرق الأوسط،يقام في دمشق سنويا منذ عام 1954م تشارك به عشرات الدول
+              من مختلف قارات العالم ومئات الشركات السورية والعالمية</p>
+            <p>27/8/2026</p>
+            <button class="btn" id="btn"><a href="./event/event1.html"> التفاصيل</a></button>
+          </div>
+        </div>
+        <div class="event-box" data-category="music">
+          <img src="./images/damascus opera.jpeg" alt="">
+          <div class="box-container">
             <h2><span>دارأوبرا دمشق</span></h2>
-          <p>افتتحت عام 2004، جاءت الدار كإحدى أهم المؤسسات الثقافية في الألفية الجديدةلاستضافة العروض المسرحية والموسيقية, من العروض التي تقدم في دار الأوبرا فرقة إنانا السورية</p>
-          <p>15/3/2026</p>
-          <button class="btn"><a href="./event/event2.html"> التفاصيل</a></button>
+            <p>افتتحت عام 2004، جاءت الدار كإحدى أهم المؤسسات الثقافية في الألفية الجديدةلاستضافة العروض المسرحية
+              والموسيقية, من العروض التي تقدم في دار الأوبرا فرقة إنانا السورية</p>
+            <p>15/3/2026</p>
+            <button class="btn"><a href="./event/event2.html"> التفاصيل</a></button>
           </div>
         </div>
 
-        <div class="event-box">
-          <img src="/images/flower fair.jpg" alt="" >
-          <div class="box-containar">
+        <div class="event-box" data-category="entertainment culture">
+          <img src="./images/flower fair.jpg" alt="">
+          <div class="box-container">
             <h2><span>معرض الزهور الدولي</span></h2>
-            <p> حدث سنوي يقام في حديقة تشرين تنظمه وزارة السياحة ، ويشهد مشاركة محلية ودولية للزهور والنباتات ومنتجات العسل والحرف اليدوية مع فعاليات ثقافية وترفيهية مرافقة</p>
+            <p> حدث سنوي يقام في حديقة تشرين تنظمه وزارة السياحة ، ويشهد مشاركة محلية ودولية للزهور والنباتات ومنتجات
+              العسل والحرف اليدوية مع فعاليات ثقافية وترفيهية مرافقة</p>
             <p>21 /6 /2026</p>
             <button class="btn" id="btn"><a href="./event/event3.html"> التفاصيل</a></button>
           </div>
         </div>
 
-       <div class="event-box">
-        <img src="/images/the-national-museum-of.jpg" alt="" >
-        <div class="box-containar">
-          <h2><span>المتحف الوطني بدمشق</span></h2>
-          <p>عميد المتاحف السورية وواحد من أهم المتاحف العربية، فهو أكبرها وأقدمها وأشهرها ويشكل بأقسامه وحدائقه الواسعة متاحف عديدة ضمن متحف واحد، كما ويضم أبرز الآثار السورية المكتشفة في القرن العشرين</p>
-          <p>يومياً من 9 ص إلى 5 م</p>
-          <button class="btn"><a href="./event/event4.html"> التفاصيل</a></button>
+        <div class="event-box" data-category="culture">
+          <img src="./images/the-national-museum-of.jpg" alt="">
+          <div class="box-container">
+            <h2><span>المتحف الوطني بدمشق</span></h2>
+            <p>عميد المتاحف السورية وواحد من أهم المتاحف العربية، فهو أكبرها وأقدمها وأشهرها ويشكل بأقسامه وحدائقه
+              الواسعة متاحف عديدة ضمن متحف واحد، كما ويضم أبرز الآثار السورية المكتشفة في القرن العشرين</p>
+            <p>يومياً من 9 ص إلى 5 م</p>
+            <button class="btn"><a href="./event/event4.html"> التفاصيل</a></button>
+          </div>
         </div>
-     </div>
 
-     <div class="event-box">
-      <img src="/images/Umayyad_Mosque_night.jpg" alt="">
-      <div class="box-containar">
-        <h2><span>الجامع الأموي الكبير</span></h2>
-        <p>وهو من أشهر المساجد وأفخمها، وأحد عجائب الإسلام السبعة في العالم تميز الجامع الأموي أيضًا بكونه أول مسجد ظهر فيه المحراب والحنية نتيجة طراز البناء الذي كان يشكل كنيسة يوحنا المعمدان سابقاً</p>
-        <p>يومياً من 9 ص إلى 5م</p>
-         <button class="btn"><a href="./event/event5.html"> التفاصيل</a></button>
-      </div>
-     </div>
+        <div class="event-box" data-category="religious">
+          <img src="./images/Umayyad_Mosque_night.jpg" alt="">
+          <div class="box-container">
+            <h2><span>الجامع الأموي الكبير</span></h2>
+            <p>وهو من أشهر المساجد وأفخمها، وأحد عجائب الإسلام السبعة في العالم تميز الجامع الأموي أيضًا بكونه أول مسجد
+              ظهر فيه المحراب والحنية نتيجة طراز البناء الذي كان يشكل كنيسة يوحنا المعمدان سابقاً</p>
+            <p>يومياً من 9 ص إلى 5م</p>
+            <button class="btn"><a href="./event/event5.html"> التفاصيل</a></button>
+          </div>
+        </div>
 
-     <div class="event-box">
-          <img src="/images/al-azem-palace-palace.jpg" alt="">           
-          <div class="box-containar">
+        <div class="event-box" data-category="culture">
+          <img src="./images/al-azem-palace-palace.jpg" alt="">
+          <div class="box-container">
             <h2><span>قصر العظم</span></h2>
-          <p>هو قصر شُيد في القرن الثامن عشر الميلادي، ويقع في النهاية الشمالية لسوق البزورية بدمشق القديمة،وهو من بناء والي دمشق الوزير أسعد العظم عام 1749م ويعد القصر نموذجاً للفن المعماري الإسلامي المتطور</p>
-          <p>يومياً من 9 ص إلى 5م</p>
-          <button class="btn"><a href="./event/event6.html"> التفاصيل</a></button>
-           </div>
+            <p>هو قصر شُيد في القرن الثامن عشر الميلادي، ويقع في النهاية الشمالية لسوق البزورية بدمشق القديمة،وهو من
+              بناء والي دمشق الوزير أسعد العظم عام 1749م ويعد القصر نموذجاً للفن المعماري الإسلامي المتطور</p>
+            <p>يومياً من 9 ص إلى 5م</p>
+            <button class="btn"><a href="./event/event6.html"> التفاصيل</a></button>
+          </div>
         </div>
 
-     </div>
-     </div>
+      </div>
     </div>
-    </section>
+    </div>
+  </section>
 
-     <footer class="footer" id="footer">
-        <div class="footer-contanir">
-            <div class="footer-social">
-              <h2>دليلك لزيارة دمشق</h2>
-             <div class="social-icons">
-               <a href=""><i class='bx bxl-facebook-circle'></i></a>
-               <a href=""><i class='bx bxl-instagram-alt'></i></a>
-               <a href=""><i class='bx bxl-telegram'></i></a>
-             </div>
-              <a href=""> Damascus@cityevents.com</a>
-            </div>
-            <hr class="vertical">
-            <div class="footer-contact">
-                <h2>التواصل على الأرقام:</h2>
-                <ul  class="phone">
-                  <li class="name">Marah swidan : marah_401243</li>
-                  <li class="name">Batoul alani : batoul_341595</li>
-                  <li class="name">Khalid kakhi : khalid_377331</li>
-                  <li class="name">Mosaab Alseed : mousaab_395345</li>
-                  <li class="name">Elias Albittar: Elias_392234</li>
-                </ul>
-            </div>
+  <footer class="footer" id="footer">
+    <div class="footer-container">
+      <div class="footer-social">
+        <h2>دليلك لزيارة دمشق</h2>
+        <div class="social-icons">
+          <a href=""><i class='bx bxl-facebook-circle'></i></a>
+          <a href=""><i class='bx bxl-instagram-alt'></i></a>
+          <a href=""><i class='bx bxl-telegram'></i></a>
         </div>
-        <hr class="end">
-        <h3>2025<span> @ </span>حقوق النشر محفوظة</3>
+        <a href=""> Damascus@cityevents.com</a>
+      </div>
+      <hr class="vertical">
+      <div class="footer-contact">
+        <h2>التواصل على الأرقام:</h2>
+        <ul class="phone">
+          <li class="name">Marah swidan : marah_401243</li>
+          <li class="name">Batoul alani : batoul_341595</li>
+          <li class="name">Khalid kakhi : khalid_377331</li>
+          <li class="name">Mosaab Alseed : mousaab_395345</li>
+          <li class="name">Elias Albittar: Elias_392234</li>
+        </ul>
+      </div>
+    </div>
+    <hr class="end">
+    <h3>2025<span> @ </span>حقوق النشر محفوظة</3>
 
-    </footer>
+  </footer>
 
-    <script src="./js/main.js"></script>
+  <script src="./js/main.js"></script>
 
 </body>
+
 </html>
